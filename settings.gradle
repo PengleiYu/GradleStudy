@@ -1,0 +1,21 @@
+rootProject.name = 'gradle_test'
+
+//println("setting.gradle:>> " + settings)
+//println("setting.gradle:>> " + this)
+//println("setting.gradle:>> " + rootProject)
+//println("setting.gradle:>> " + rootProject.name)
+[rootProject.name,
+ rootProject.buildFile,
+ rootProject.buildFileName,
+ rootProject.children,
+ rootProject.path,
+ rootProject.parent,
+ rootProject.projectDir]
+        .forEach { v -> println(v) }
+//gradle_testt
+///mnt/c/Users/YPL/githubDemo/gradle_test/build.gradle
+//build.gradle
+//[]
+//:
+//null
+///mnt/c/Users/YPL/githubDemo/gradle_test
