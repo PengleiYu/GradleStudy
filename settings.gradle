@@ -1,17 +1,45 @@
 rootProject.name = 'gradle_test'
+include ':mode_a'
 
-//println("setting.gradle:>> " + settings)
-//println("setting.gradle:>> " + this)
-//println("setting.gradle:>> " + rootProject)
-//println("setting.gradle:>> " + rootProject.name)
+println("setting.gradle:>> " + settings)
+println("setting.gradle:>> " + this)
+[
+        gradle,
+        testName,
+        testAge,
+        name_dotGradle,
+        age_dotGradle,
+//        name_P,
+].forEach { println(it) }
+
+println(">>>>>>>>>>>>>>Settings properties>>>>>>>>>>>>>>>>>>")
+
+[
+        buildCache,
+        extensions,
+        gradle,
+        pluginManager,
+        plugins,
+        rootDir,
+        rootProject,
+        settings,
+        settingsDir,
+        startParameter,
+].forEach { println(it) }
+
+println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+
+// 打印rootProject
 [rootProject.name,
+ rootProject.path,
  rootProject.buildFile,
  rootProject.buildFileName,
- rootProject.children,
- rootProject.path,
+ rootProject.projectDir,
  rootProject.parent,
- rootProject.projectDir]
-        .forEach { v -> println(v) }
+ rootProject.children,
+].forEach {
+    println("rootProject: " + it)
+}
 //gradle_testt
 ///mnt/c/Users/YPL/githubDemo/gradle_test/build.gradle
 //build.gradle
@@ -19,3 +47,4 @@ rootProject.name = 'gradle_test'
 //:
 //null
 ///mnt/c/Users/YPL/githubDemo/gradle_test
+
